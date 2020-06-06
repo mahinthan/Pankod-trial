@@ -67,7 +67,7 @@ const Home: NextPage<IHomePage.IProps, IHomePage.InitialProps> = ({
                         >
                             Load Special Cruises
                         </ApodButton>
-                        <ApodButton
+                        {/* <ApodButton
                             onClick={() => {
                                 dispatch(
                                     HomeActions.Reset()
@@ -75,7 +75,7 @@ const Home: NextPage<IHomePage.IProps, IHomePage.InitialProps> = ({
                             }}
                         >
                             Clear Special Cruises
-                        </ApodButton>
+                        </ApodButton> */}
                         {home.image.result && home.image.result.map((sc, key) =>
                             <TopText>{sc.title}</TopText>
                         )}
